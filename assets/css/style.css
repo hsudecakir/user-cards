@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #b0b0b06d;
+  --blue: #0047AB;
+  --bg-gray: #6c757d2d;
+  --bg-green: #d1e7dd88;
+  --bg-blue: #b3dffc83;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: "Manrope", serif;
+  background-color: var(--white);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+  font-family: "Manrope", serif;
+}
+
+.container{
+  max-width: 1280px;
+  margin: 40px auto;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1{
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+header .search-input{
+  position: relative;
+}
+
+header input{
+  padding: 12px 30px 12px 24px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--blue);
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+header i{
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+.user-cards__grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.user-cards__grid-item{
+  padding: 32px;
+  border: 3px solid var(--black);
+  border-radius: 6px;
+}
+
+.user-cards__grid-item.young{
+  background-color: var(--bg-blue);
+}
+
+.user-cards__grid-item.middle-aged{
+  background-color: var(--bg-green);
+}
+
+.user-cards__grid-item.old{
+  background-color: var(--bg-gray);
+}
+
+.user-cards__grid-item__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.user-cards__grid-item__wrapper img{
+  border-radius: 50%;
+  border: 1px solid var(--gray);
+}
+
+.user-info .name{
+  display: flex;
+  gap: 7px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 7px;
+}
+
+.user-info .username{
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.contact h3{
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.contact p{
+  margin-bottom: 12px;
+  color: var(--black);
+}
+
+.contact p.company-name{
+  margin-bottom: 0;
+}
+
+.contact p span{
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 7px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact p span i{
+  font-size: 15px;
+}
+
